@@ -138,3 +138,11 @@ form{
 #Body_2{
     display:flex;
 }
+
+@media (max-width:700px){
+    #map{
+        height : 357px; 
+        width : 100%;
+        top: 0;
+    }
+}
