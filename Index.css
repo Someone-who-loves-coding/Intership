@@ -25,6 +25,7 @@ body{
 }
 
 .ele{
+    display: inline-block;
     width: 270px;
     height: 70px;
     margin-left: 10.8%;
@@ -32,27 +33,96 @@ body{
 }
 
 .ele_top{
-font-family: IBM Plex Sans;
-font-size: 14px;
-font-weight: 400;
-line-height: 17px;
-letter-spacing: 0px;
-text-align: left;
+    display: inline-block;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
 }
 
 .ele_bot{
-display:inline-flex;
-width: 250px;
-height: 45px;
-border-radius: 6px;
-border: 1px;
-background: white;
+    display: inline-block;
+    width: 250px;
+    height: 45px;
+    border-radius: 6px;
+    border: 1px;
+    background: white;
 }
 
 #dot{
-display:inline-flex;
-width: 10.35px;
-height: 10.35px;
-border-radius: 25px;
-background: #32CD32;
+    display: inline-block;
+    width: 10.35px;
+    height: 10.35px;
+    border-radius: 25px;
+    background: #32CD32;
+}
+
+#Green_Icon{
+    padding-left: 20px;
+    background: url("Images/Ellipse 20.png") no-repeat left;
+    background-color: white;
+    background-size: 15px;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.Black_Icon{
+    padding-left: 20px;
+    background: url("Images/Ellipse black.png") no-repeat left;
+    background-color: white;
+    background-size: 15px;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+ #map {
+    display: inline;
+    margin-top: auto;
+    margin-left: 53.89%;
+    overflow: hidden;
+    right: 0px;
+    float:left;
+    height: 511px;
+    width: 560px;
+  }
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+#calculateDistance{
+    float: left;
+    width: 141px;
+    height: 62px;
+    left: 505px;
+    top: 262px;
+    background: #1B31A8;
+    border-radius: 32px;
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    color:white;
+}
+
+.but{
+    margin-left: 38%;
+    margin-right: 0;
 }
