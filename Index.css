@@ -88,12 +88,8 @@ body{
 }
 
  #map {
-    display: inline;
-    margin-top: auto;
-    margin-left: 53.89%;
-    overflow: hidden;
-    right: 0px;
-    float:left;
+    display: inline-flex;
+    margin-right: 10%;
     height: 511px;
     width: 560px;
   }
@@ -105,8 +101,13 @@ body {
     padding: 0;
   }
 
+form{
+    display: inline-block;
+}
+
 #calculateDistance{
-    float: left;
+    margin-top: 125;
+    display: inline-block;
     width: 141px;
     height: 62px;
     left: 505px;
@@ -125,4 +126,14 @@ body {
 .but{
     margin-left: 38%;
     margin-right: 0;
+}
+
+#Left_Div{
+    display: inline-flex;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+#Body_2{
+    display:flex;
 }

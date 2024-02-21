@@ -1,30 +1,23 @@
-<html>
-    <head>
-        <title>
-            Graviti Solutions
-        </title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graviti Solutions</title>
     <link rel="stylesheet" href="Index.css">
-    <script type="module" src="./index.js"></script>
-    <body>
-        <div id="Navbar">
-            <div id="Logo">
-                <img src="Images\Logo.png" height="69" width="160">
-            </div>
+</head>
+<body>
+    <div id="Navbar">
+        <div id="Logo">
+            <img src="Images\Logo.png" height="69" width="160">
         </div>
-            <div id="Title" style="
-            padding-top: 0px;
-            margin-top: 45px;
-            padding-bottom: 0px;
-            margin-bottom: 0px;
-            padding-right: 0px;
-            padding-left: 0px;">
-                Let's calculate <b>distance</b> from Google maps
-            </div>
-            <form style="float: left;" action="Index.js" method="post">
+    </div>
+    <div id="Title">
+        Let's calculate <b>distance</b> from Google maps
+    </div>
+    <div id="Body_2">
+        <div id="Left_Div">
+            <form>
                 <div class="ele">
                     <div class="ele_top">
                         <label for="Origin">Origin</label>
@@ -33,22 +26,19 @@
                         <input id="Green_Icon" for="Origin" name="Origin" placeholder="Origin" required>
                     </div>
                 </div>
-                <br style="display: inline-block;">
-                <div class="ele" style="margin-top: 26;">
+                <br>
+                <div class="ele">
                     <div class="ele_top">
                         <label for="Stops">Stop</label>
                     </div>
                     <div>
                         <input class="Black_Icon" for="Stops" name="Stops" placeholder="Add Stops">
                     </div>
-                    <div>
-                        <button class="but" type="button">+add more stops</button>
-                    </div>
+                    <div id="addmorestop">
+                        <button id="addStopButton" class="but" type="button">+ Add More Stops</button>
+                    </div>                    
                 </div>
-                <div>
-                    <input type="submit" id="calculateDistance" value="Calculate">
-                </div>
-                <div class="ele" style="margin-top: 26;">
+                <div class="ele">
                     <div class="ele_top">
                         <label for="Destination">Destination</label>
                     </div>
@@ -56,10 +46,12 @@
                         <input class="Black_Icon" for="Destination" name="Destination" placeholder="Destination">
                     </div>
                 </div>
+                <input type="button" id="calculateDistance" value="Calculate">
             </form>
-            <div id="map">
-                <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
-                    ({key: "AIzaSyAYBivEevsC3sXYWfY6n9803tvASqB0TUI", v: "weekly"});</script>
-            </div>
-    </body>
+        </div>
+    <div id="map"></div>
+    <script type="module" src="./script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYBivEevsC3sXYWfY6n9803tvASqB0TUI&libraries=places&callback=initMap" async defer></script>
+    </div>
+</body>
 </html>
