@@ -18,6 +18,8 @@ async function initMap() {
 
 initMap();
 
+
+
 document.getElementById("addStopButton").addEventListener("click", function() {
   var newInput = document.createElement("input");
   newInput.className = "Black_Icon stop-input";
@@ -25,6 +27,5 @@ document.getElementById("addStopButton").addEventListener("click", function() {
   newInput.name = "stop[]";
   newInput.placeholder = "Add Stops";
 
-  document.getElementById("Left_Div").appendChild(newInput);
+  document.querySelector("form").appendChild(newInput);
 });
-
