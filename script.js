@@ -19,14 +19,12 @@ async function initMap() {
 initMap();
 
 document.getElementById("addStopButton").addEventListener("click", function() {
-  // Create a new input element
   var newInput = document.createElement("input");
   newInput.className = "Black_Icon stop-input";
   newInput.type = "text";
   newInput.name = "stop[]";
   newInput.placeholder = "Add Stops";
 
-  // Append the new input element to the form
   document.getElementById("Left_Div").appendChild(newInput);
 });
 
